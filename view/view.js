@@ -32,7 +32,8 @@ function dragStart(e) {
 
 //dragEnd
 function dragEnd(e) {
-  this.style.opacity = '1';
+  //Remove card opacity
+  this.style = '';      //this.style.opacity = '1';
 }
 
 function definirDroppables() {

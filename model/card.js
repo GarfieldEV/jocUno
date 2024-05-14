@@ -6,7 +6,7 @@ export default class Card {
   }
 
   get colour() {
-    return this.colour;
+    return this._colour;
   }
 
   set colour(colour) {
