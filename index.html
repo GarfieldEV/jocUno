@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+    integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <script type="module" src="app.js"></script>
+
+  <meta charset="UTF-8" />
+  <title>Joc del Uno</title>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 text-center">
+        <picture>
+          <source srcset="img/uno.png" type="image/webp" width="250px">
+          <img src="img/uno.png" alt="Virus">
+        </picture>
+      </div>
+    </div>
+
+
+    <div id="tauler" class="row">
+      <h1>Jugador 1</h1>
+      <div class="cartes" id="cartes1">
+
+        <div id="c1" data-value="1" data-colour="red" class="card red" draggable="true">1</div>
+        <div id="c2" data-value="5" data-colour="blue" class="card blue" draggable="true">5</div>
+        <div id="c3" data-value="7" data-colour="green" class="card green" draggable="true">7</div>
+        <div id="c4" data-value="9" data-colour="blue" class="card blue" draggable="true">9</div>
+
+      </div>
+      <h1>Pila</h1>
+      <div id="pila" class="pila">
+        <div id="c5" data-value="5" data-colour="green" class="card green">5</div>
+
+      </div>
+    </div>
+  </div>
+
+
+</body>
+
+</html>

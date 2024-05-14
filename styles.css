@@ -1,0 +1,63 @@
+h1 {
+  text-align: center;
+  background-color: #ddd;
+  padding: 10px;
+}
+
+/* Carta */
+.card {
+  width: 120px;
+  height: 180px;
+  border-radius: 10px;
+  border: 3px solid black;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 7em;
+  font-weight: bold;
+}
+
+.card.red {
+  background-color: tomato;
+}
+
+.card.green {
+  background-color: lightgreen;
+}
+
+.card.blue {
+  background-color: lightskyblue;
+}
+
+/* Cartes */
+.cartes,
+.pila {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 35px;
+}
+
+.cartes>div:nth-child(1) {
+  transform: rotate(-30deg);
+  translate: 40px 30px;
+}
+
+.cartes>div:nth-child(2) {
+  transform: rotate(-10deg);
+  translate: 20px 0px;
+}
+
+.cartes>div:nth-child(3) {
+  transform: rotate(10deg);
+}
+
+.cartes>div:nth-child(4) {
+  transform: rotate(30deg);
+  translate: -25px 30px;
+}
+
+.drag-over {
+  border: dashed 5px tomato;
+  opacity: 0.5;
+}
